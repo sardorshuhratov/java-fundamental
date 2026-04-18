@@ -18,7 +18,7 @@ public class ValyutaKonvertor {
     static Map<String, Double> rates = new HashMap<>();
     static String lastUpdated = "";
 
-    static void main(String[] args) throws Exception {
+    public void main(String[] args) throws Exception {
         System.out.println("╔══════════════════════════════════════╗");
         System.out.println("║     VALYUTA KONVERTORI (Real-time)   ║");
         System.out.println("║     O'zbekiston Markaziy Banki       ║");
