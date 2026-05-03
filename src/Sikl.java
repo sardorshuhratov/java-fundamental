@@ -82,13 +82,28 @@ public class Sikl {
 //        ints[1][2] = 6;
 //        System.out.print(ints[0][0]);
 
-        int[][] numers = {
-                {1,2,3},
-                { },
-                {4,5,6}
+        int[] numers = {2,4,8,6,2,10,6};
+        int sum = 0;
 
-        };
-        
-
+        boolean hasOdd = false;
+        for ( int numer : numers ) {
+            if (numer % 2 == 1) {
+                hasOdd = true;
+                break;
+            }
+        }
+        if (hasOdd) {
+            for ( int i : numers ) {
+                if (i % 2 == 1) {
+                    break;
+                }
+                sum += i;
+            }
+        }else {
+            for ( int i = 1; i < numers.length - 1; i++ ) {
+                sum += numers[i];
+            }
+        }
+        System.out.println(sum);
     }
 }
